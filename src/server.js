@@ -1,8 +1,8 @@
-import App from './App';
-import React from 'react';
-import { StaticRouter } from 'react-router-dom';
 import express from 'express';
+import React from 'react';
 import { renderToString } from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom';
+import App from './App';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -28,7 +28,7 @@ server
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
         <title>Welcome to Razzle</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-søøøøøcale=1">
         ${
           assets.client.css
             ? `<link rel="stylesheet" href="${assets.client.css}">`
