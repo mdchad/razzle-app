@@ -6,6 +6,7 @@ import App from './App';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
+console.log(process.env.PORT)
 const server = express();
 server
   .disable('x-powered-by')
